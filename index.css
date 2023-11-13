@@ -1,0 +1,59 @@
+* {
+  background-color: #7e087e;
+}
+
+#numeroParaConversao,
+#tipoConversao {
+  max-width: 320px;
+  min-width: 200px;
+}
+
+.entradaUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.txtBoasvindas {
+  font-size: 40px;
+  margin: 20px 5px;
+  color: rgb(147, 147, 182);
+}
+.txtBoasvindas:hover {
+  text-decoration: underline;
+}
+
+.txt {
+  color: rgb(147, 147, 182);
+}
+
+.btnButton {
+  border: 1px solid rgb(147, 147, 182);
+  border-radius: 8px;
+  margin-top: 5em;
+  padding: 5px;
+  background-color: transparent;
+  color: rgb(147, 147, 182);
+}
+.btnButton:hover {
+  background-color: rgb(147, 147, 182);
+  color: black;
+}
+
+#resultadoConversao {
+  padding: 5em;
+  color: aliceblue;
+}
+
+@media screen and (min-width: 768px) {
+  .containerPai {
+    display: flex;
+    padding: 5em;
+    justify-content: center;
+    align-items: center;
+  }
+  .foto {
+    margin: auto;
+  }
+}/*# sourceMappingURL=index.css.map */
