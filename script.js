@@ -11,6 +11,8 @@ botao.addEventListener('click', function() {
         const resultado = converterNumeroArabico(numeroArabico);
         document.getElementById('resultadoConversao').innerText = `O número romano é: ${resultado}`;
     }
+     // Limpa o campo de input após a conversão
+    document.getElementById('numeroParaConversao').value = '';
 });
 
 
@@ -65,7 +67,7 @@ function converterNumeroRomano() {
 
 //VERIFICAÇÃO DE MAXIMO DE SEQUÊNCIAS 
 function verificarSequencia(numeroRomano) {
-    const sequenciaInvalida = /IIII|XXX|CCC|MMM/; // Expressão regular para verificar sequências inválidas
+    const sequenciaInvalida = /IIII|XXXX|CCCC|MMMM/; // Expressão regular para verificar sequências inválidas
     return sequenciaInvalida.test(numeroRomano); 
     /* EXPRESSÃO REGULAR POSSIBILITA ATRIBUIR UMA SEQUENCIA ESPECIFICA AO JUNTA COM  .TEST() FAZ A VERIFICAÇÃO 
     PARA VER SE A SEQUENCIA COLOCADA PELO USAR NO MEU NUMEROROMANO E CAI EM ALGUNS DESSES PADROES QUE COLOQUEI NA EXPRESSÃO*/
